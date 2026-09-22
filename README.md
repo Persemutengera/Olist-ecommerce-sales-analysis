@@ -39,7 +39,7 @@ The analysis answers the following questions:
 The project uses the Brazilian Olist e-commerce public dataset, which contains information about orders, customers, products, sellers, payments, reviews, and geographic information.
 
 ## Main tables
-|## Table	     |  ## Description                           |
+| Table	       |  Description                              |
 |--------------|-------------------------------------------|
 |customers	   | Customer information and location         |
 |orders	       | Order status and order dates              |
@@ -62,15 +62,16 @@ The project uses the Brazilian Olist e-commerce public dataset, which contains i
 
 The imported dataset contains:
 
-# Metric	                         # Value
-  Orders	                           99,441
-  Customers	                         96,096 unique customers
-  Products	                         32,951
-  Sellers                             3,095
-  Order items                       112,650
-  Order payments	                  103,886
-  Order reviews	                     99,222
-  Geolocation records  	          1,000,163
+|  Metric	           |               Value             |
+|--------------------|---------------------------------|
+|  Orders	           |         99,441                  |
+|  Customers	       |         96,096 unique customers |
+|  Products	         |         32,951                  |
+|  Sellers           |          3,095                  |
+|  Order items       |        112,650                  |
+|  Order payments	   |        103,886                  |
+| Order reviews	     |         99,222                  |
+| Geolocation records|  	  1,000,163                  |
 
 # Analysis & Key Findings
 ## 1. Total Revenue
@@ -116,12 +117,13 @@ This demonstrates that the product with the highest sales volume is not necessar
 
 The leading categories by sales value included:
 
-# Category	             # Units Sold	                  # Sales
-beleza_saude           	   9,670	                        R$1,258,681.34
-relogios_presentes	       5,991	                        R$1,205,005.68
-cama_mesa_banho	          11,115	                        R$1,036,988.68
-esporte_lazer              8,641	                        R$988,048.97
-informatica_acessorios	   7,827	                        R$911,954.32
+| Category	            |  Units Sold	  |  Sales           |
+|-----------------------|---------------|------------------|
+|beleza_saude           |	   9,670	    |   R$1,258,681.34 |
+|relogios_presentes     |    5,991	    |   R$1,205,005.68 |
+|cama_mesa_banho	      |   11,115	    |   R$1,036,988.68 |
+|esporte_lazer          |    8,641	    |   R$988,048.97   |
+|informatica_acessorios	|    7,827	    |   R$911,954.32   |
 
 beleza_saude generated the highest sales value among the top 10 categories, while cama_mesa_banho had the highest unit volume among those categories.
 
@@ -143,12 +145,13 @@ This demonstrates the difference between sales volume and sales value.
 
 Credit cards were the dominant payment method.
 
-# Payment Method	   # Transactions	     # Total Payment	      # Average Payment
-  Credit card	         76,795	             R$12,542,084.19	      R$163.32
-  Boleto	             19,784	             R$2,869,361.27      	  R$145.03
-  Voucher	              5,775              R$379,436.87         	R$65.70
-  Debit card	          1,529              R$217,989.79	          R$142.57
-  Not defined              	3	             R$0.00	                R$0.00
+| Payment Method  |	    Transactions	|    Total Payment	 |   Average Payment  |
+|-----------------|-------------------|--------------------|--------------------|
+| Credit card	    |     76,795	      |    R$12,542,084.19 |      R$163.32      |
+|  Boleto	        |     19,784	      |    R$2,869,361.27  |    	R$145.03      |
+| Voucher	        |      5,775        |    R$379,436.87    |      R$65.70       |
+|  Debit card	    |      1,529        |    R$217,989.79	   |      R$142.57      |
+| Not defined     |        	3	        |     R$0.00	       |        R$0.00      |
 
 Credit cards generated the largest payment value and had the highest transaction volume.
 
@@ -156,28 +159,31 @@ Credit cards generated the largest payment value and had the highest transaction
 
 The highest-spending customers included:
 
-# City	             # State	               # Orders	             # Total Spent
-Rio de Janeiro	       RJ                     	1                    R$13,664.08
-Florianopolis          SC	                      3	                   R$9,553.02
-Araruama	             RJ                     	2	                   R$7,571.63
-Vila Velha	           ES	                      1                    R$7,274.88
-Campo Grande	         MS                     	1	                   R$6,929.31
+| City	         |     State	  |  Orders	 | Total Spent |
+|----------------|--------------|----------|-------------|
+|Rio de Janeiro	 |      RJ      |    1     | R$13,664.08 |
+|Florianopolis   |      SC	    |    3	   | R$9,553.02  |
+|Araruama	       |      RJ      |    2	   | R$7,571.63  |
+|Vila Velha	     |      ES	    |    1     | R$7,274.88  |
+|Campo Grande	   |      MS      |    1	   | R$6,929.31  |
 
 The results show that high customer spending can come from either multiple orders or high-value individual purchases.
 
-# 8. Review Score Analysis
-# Review Score	          # Reviews                  #	Percentage
-  1	                          11,423	                    11.51%
-  2	                           3,151	                     3.18%
-  3                          	 8,179	                     8.24%
-  4	                          19,142	                    19.29%
-  5                          	57,327	                    57.78%
+## 8. Review Score Analysis
+
+| Review Score	  |  Reviews     | Percentage |
+|-----------------|--------------|------------|
+| 1	              |  11,423	     |   11.51%   |
+| 2	              |   3,151	     |    3.18%   |
+| 3               |   8,179	     |    8.24%   |
+| 4	              |  19,142	     |   19.29%   |
+| 5               |  57,327	     |   57.78%   |
 
 The largest group of reviews was the 5-star category, representing 57.78% of reviews.
 
 Reviews rated 4 or 5 stars represented 77.07% of all reviews.
 
-# 9. Delivery Performance
+## 9. Delivery Performance
 
 The average delivery time was:
 
@@ -194,80 +200,84 @@ Actual Delivery Date - Estimated Delivery Date
 
 the negative result indicates that orders were delivered approximately 11.88 days before the estimated delivery date on average.
 
-# 10. Customer Geographic Analysis
+## 10. Customer Geographic Analysis
 
-# Top states
+## Top states
 
-# State                                    	# Customers
-  SP	                                           41,746
-  RJ	                                           12,852
-  MG                                           	 11,635
-  RS	                                            5,466
-  PR	                                            5,045
-  SC	                                            3,637
+| State  |	 Customers   |
+|--------|---------------|
+| SP	   |    41,746     |
+| RJ	   |    12,852     |
+| MG     |    11,635     |
+| RS	   |     5,466     |
+| PR	   |     5,045     |
+| SC	   |     3,637     |
 
 São Paulo had the largest customer base with 41,746 customers.
 
 ## Top cities
-# City	                     # State         	# Customers
-São Paulo                      	SP             	15,540
-Rio de Janeiro                 	RJ	             6,882
-Belo Horizonte	                MG               2,773
-Brasília	                      DF               2,131
-Curitiba                       	PR	             1,521
-Campinas	                      SP	             1,444
-Porto Alegre	                  RS	             1,379
-Salvador	                      BA	             1,245
-Guarulhos	                      SP	             1,189
-São Bernardo do Campo         	SP	               938
+
+| City	                 |   State      |     Customers     |
+|------------------------|--------------|-------------------|
+|São Paulo               |     SP       |      15,540       |
+|Rio de Janeiro          |     RJ	      |       6,882       |
+|Belo Horizonte	         |     MG       |       2,773       |
+|Brasília	               |     DF       |       2,131       |
+|Curitiba                |     PR	      |       1,521       |
+|Campinas	               |     SP	      |       1,444       |
+|Porto Alegre	           |     RS	      |       1,379       |
+|Salvador	               |     BA	      |       1,245       | 
+|Guarulhos	             |     SP	      |       1,189       | 
+|São Bernardo do Campo   |     SP	      |         938       |
 
 The top 10 cities accounted for approximately 35.2% of the customer base.
 
-## Business KPI Summary
+# Business KPI Summary
 
- # KPI                                # Result
-Total Orders	                        99,441
-Unique Customers                    	96,096
-Products                             	32,951
-Sellers	                              3,095
-Total Payment Value                 	R$16,008,872.12
-Average Payment	                      R$154.10
-Average Review Score                	4.09 / 5
-Delivered Orders                    	96,478
-Average Delivery Time	                12.50 days
-Average Difference from Estimate    	-11.88 days
+| KPI                              |    Result             |
+|----------------------------------|-----------------------|
+|Total Orders	                     |   99,441              |
+|Unique Customers                  | 	 96,096              |
+|Products                          |   32,951              | 
+|Sellers	                         |    3,095              |
+|Total Payment Value               |  R$16,008,872.12      |
+|Average Payment	                 |  R$154.10             |
+|Average Review Score              |  	4.09 / 5           |
+|Delivered Orders                  |   	96,478             |  
+|Average Delivery Time	           |    12.50 days         |     
+|Average Difference from Estimate  |  	-11.88 days        |
 
-##Key Business Insights
+# Key Business Insights
 
-# 1. Revenue and sales growth
+##  1. Revenue and sales growth
 
 The dataset shows substantial growth in monthly payment value from 2017 into 2018, with several months exceeding R$1 million in recorded payments.
 
-# 2. Payment behavior
+##  2. Payment behavior
 
 Credit cards were the dominant payment method, generating more than R$12.5 million in recorded payment value.
 
-# 3. Product performance
+## 3. Product performance
 
 High unit volume and high sales value were not always associated with the same products, highlighting the importance of analyzing both metrics.
 
-# 4. Category performance
+## 4. Category performance
 
 beleza_saude generated the highest sales value among the top 10 categories, while cama_mesa_banho recorded the highest unit volume among those categories.
 
-# 5. Customer concentration
+## 5. Customer concentration
 
 Customers were geographically concentrated in several major Brazilian states, particularly São Paulo, Rio de Janeiro, and Minas Gerais.
 
-# 6. Customer experience
+## 6. Customer experience
 
 The average review score was 4.09/5, while 5-star reviews represented 57.78% of all reviews.
 
-# 7. Delivery performance
+## 7. Delivery performance
 
 Average delivery time was 12.50 days, while the actual delivery date was on average 11.88 days earlier than the estimated delivery date.
 
-## SQL Skills Demonstrated
+# SQL Skills Demonstrated
 
 This project demonstrates practical use of:
 
@@ -290,7 +300,7 @@ Aggregate functions
 Date analysis
 KPI calculations
 
-## Project Structure
+# Project Structure
 
 ```Text
 olist-ecommerce-sql-analysis/
@@ -321,7 +331,7 @@ olist-ecommerce-sql-analysis/
     └── business_insights.md
 ```
 
-## Conclusion
+# Conclusion
 
 This project demonstrates how SQL can be used to transform raw e-commerce data into actionable business insights.
 
