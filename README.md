@@ -39,15 +39,16 @@ The analysis answers the following questions:
 The project uses the Brazilian Olist e-commerce public dataset, which contains information about orders, customers, products, sellers, payments, reviews, and geographic information.
 
 ## Main tables
-# Table	                                 # Description
-customers	                                 Customer information and location
-orders	                                   Order status and order dates
-order_items	                               Products purchased in each order
-order_payments	                           Payment methods and payment values
-order_reviews	                             Customer review scores and comments
-products	                                 Product information and categories
-sellers	                                   Seller information and location
-geolocation                                Brazilian ZIP-code geographic information
+|## Table	     |  ## Description                           |
+|--------------|-------------------------------------------|
+|customers	   | Customer information and location         |
+|orders	       | Order status and order dates              |
+|order_items	 | Products purchased in each order          |
+|order_payments| Payment methods and payment values        |
+|order_review  | Customer review scores and comments       |
+|products      | Product information and categories        |
+|sellers       | Seller information and location           |
+|geolocation   | Brazilian ZIP-code geographic information |
 
 
 # Tools & Technologies
